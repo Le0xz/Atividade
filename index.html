@@ -4,8 +4,249 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap.min.css">
-    <title>Document</title>
+    <title>Star Wars - Curiosidades</title>
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100 bg-black text-light">
+
+    <!-- BASEBOARD SUPERIOR -->
+    <header class="bg-dark text-danger py-3 shadow-sm border-bottom border-danger">
+        <div class="container">
+            <h1 class="h5 mb-0">Que a Força Esteja com Você</h1>
+        </div>
+    </header>
+
+    <!-- MEIO DA PÁGINA (6 Seções / Prompts) -->
+    <main class="container my-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+
+            <!-- ITEM 1 -->
+            <div class="col">
+                <div class="card bg-dark text-light border-danger h-100">
+                    <img src="https://picsum.photos/300/200?random=1" class="card-img-top" alt="Luke Skywalker">
+                    <div class="card-body">
+                        <h5 class="card-title text-danger">1. Luke Skywalker</h5>
+                        <p class="card-text">O jovem fazendeiro de Tatooine que descobriu seu destino como cavaleiro Jedi.</p>
+                        <!-- Botão Aciona o Modal 1 -->
+                        <button type="button" class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modal1">
+                            Ver Detalhes (Modal)
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ITEM 2 -->
+            <div class="col">
+                <div class="card bg-dark text-light border-danger h-100">
+                    <img src="https://picsum.photos/300/200?random=2" class="card-img-top" alt="Darth Vader">
+                    <div class="card-body">
+                        <h5 class="card-title text-danger">2. Darth Vader</h5>
+                        <p class="card-text">O lorde sith mais temido da galáxia, antigo Jedi consumido pelo lado sombrio.</p>
+                        <button type="button" class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modal2">
+                            Ver Detalhes (Modal)
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ITEM 3 -->
+            <div class="col">
+                <div class="card bg-dark text-light border-danger h-100">
+                    <img src="https://picsum.photos/300/200?random=3" class="card-img-top" alt="Princesa Leia">
+                    <div class="card-body">
+                        <h5 class="card-title text-danger">3. Princesa Leia</h5>
+                        <p class="card-text">Liderança implacável da Aliança Rebelde e símbolo de esperança contra o Império.</p>
+                        <button type="button" class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modal3">
+                            Ver Detalhes (Modal)
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ITEM 4 -->
+            <div class="col">
+                <div class="card bg-dark text-light border-danger h-100">
+                    <img src="https://picsum.photos/300/200?random=4" class="card-img-top" alt="Mestre Yoda">
+                    <div class="card-body">
+                        <h5 class="card-title text-danger">4. Mestre Yoda</h5>
+                        <p class="card-text">O sábio e poderoso grão-mestres da Ordem Jedi, mestre nas artes da Força.</p>
+                        <button type="button" class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modal4">
+                            Ver Detalhes (Modal)
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ITEM 5 -->
+            <div class="col">
+                <div class="card bg-dark text-light border-danger h-100">
+                    <img src="https://picsum.photos/300/200?random=5" class="card-img-top" alt="Han Solo">
+                    <div class="card-body">
+                        <h5 class="card-title text-danger">5. Han Solo</h5>
+                        <p class="card-text">O contrabandista charmoso dono da Millenium Falcon e herói relutante.</p>
+                        <button type="button" class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modal5">
+                            Ver Detalhes (Modal)
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ITEM 6 -->
+            <div class="col">
+                <div class="card bg-dark text-light border-danger h-100">
+                    <img src="https://picsum.photos/300/200?random=6" class="card-img-top" alt="Stormtrooper">
+                    <div class="card-body">
+                        <h5 class="card-title text-danger">6. Stormtroopers</h5>
+                        <p class="card-text">Os soldados de choque de elite leais ao Império Galáctico e sua armadura branca.</p>
+                        <button type="button" class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modal6">
+                            Ver Detalhes (Modal)
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- SEÇÃO DE ACCORDION (EXEMPLO EXTRA COM 6 TÓPICOS) -->
+        <div class="mt-5">
+            <h3 class="text-danger mb-3">Arquivos do Império (Accordion)</h3>
+            <div class="accordion" id="accordionStarWars">
+                
+                <div class="accordion-item bg-dark text-light border-danger">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button bg-dark text-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            Tópico 1: A Força e o Lado Sombrio
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionStarWars">
+                        <div class="accordion-body">
+                            A Força é um campo de energia criado por todos os seres vivos. Ela nos cerca, penetra e mantém a galáxia unida.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item bg-dark text-light border-danger">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button bg-dark text-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Tópico 2: Os Sabres de Luz
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionStarWars">
+                        <div class="accordion-body">
+                            A arma elegante de uma era mais civilizada, alimentada por cristais Kyber sintonizados com seu portador.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!-- MODAIS CORRESPONDENTES AOS 6 ITENS -->
+    <!-- Modal 1 -->
+    <div class="modal fade" id="modal1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-light border-danger">
+                <div class="modal-header border-bottom border-danger">
+                    <h5 class="modal-title text-danger">Luke Skywalker</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://picsum.photos/450/200?random=1" class="img-fluid mb-3 rounded" alt="Luke">
+                    <p>Informações detalhadas sobre a jornada de Luke Skywalker, desde os treinamentos no pântano de Dagobah até a redenção de sua família.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="modal2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-light border-danger">
+                <div class="modal-header border-bottom border-danger">
+                    <h5 class="modal-title text-danger">Darth Vader</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://picsum.photos/450/200?random=2" class="img-fluid mb-3 rounded" alt="Vader">
+                    <p>Detalhes sobre a armadura cibernética de suporte vital e a imponente presença do executor do Imperador Palpatine.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="modal3" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-light border-danger">
+                <div class="modal-header border-bottom border-danger">
+                    <h5 class="modal-title text-danger">Princesa Leia</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://picsum.photos/450/200?random=3" class="img-fluid mb-3 rounded" alt="Leia">
+                    <p>Histórico político, militar e as habilidades latentes na Força herdadas da linhagem Skywalker.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div class="modal fade" id="modal4" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-light border-danger">
+                <div class="modal-header border-bottom border-danger">
+                    <h5 class="modal-title text-danger">Mestre Yoda</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://picsum.photos/450/200?random=4" class="img-fluid mb-3 rounded" alt="Yoda">
+                    <p>Séculos de conhecimento acumulado sobre a Força e ensinamentos passados a gerações de cavaleiros Jedi.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 5 -->
+    <div class="modal fade" id="modal5" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-light border-danger">
+                <div class="modal-header border-bottom border-danger">
+                    <h5 class="modal-title text-danger">Han Solo</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://picsum.photos/450/200?random=5" class="img-fluid mb-3 rounded" alt="Han Solo">
+                    <p>Aventuras pelos confins da galáxia, corridas espaciais e o envolvimento profundo com a Rebelião.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 6 -->
+    <div class="modal fade" id="modal6" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-light border-danger">
+                <div class="modal-header border-bottom border-danger">
+                    <h5 class="modal-title text-danger">Stormtroopers</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://picsum.photos/450/200?random=6" class="img-fluid mb-3 rounded" alt="Stormtrooper">
+                    <p>O treinamento rigoroso e a padronização militar imposta pelo Império em toda a galáxia conhecida.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BASEBOARD INFERIOR -->
+    <footer class="bg-dark text-white text-center py-3 mt-auto border-top border-danger">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 - Rodapé Inferior</p>
+        </div>
+    </footer>
+
+    <!-- Nota: Lembre-se de incluir o arquivo JavaScript do Bootstrap (bootstrap.bundle.min.js) para que os modais e accordions funcionem -->
+    <script src="bootstrap.bundle.min.js"></script>
 </body>
 </html>
